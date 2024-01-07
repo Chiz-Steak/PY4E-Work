@@ -26,8 +26,7 @@ with open(file_name) as file: # open and close the file and resolve any errors.
             for word in words:
                   unique_set.add(word) # add the word, duplicates are discarded for word in unique:
 
-unique_list = list(unique_set) # converts the set to a list
-unique_list.sort() # sorts the list alphabetticaly
+unique_list = sorted(list(unique_set)) # Combine set and sorting in one line
 print(unique_list) # prints the list of unique words
 
 if unique_list == file_content:
